@@ -16,17 +16,9 @@
 <script>
 const btn = document.getElementById("btn");
 const sound = document.getElementById("hoverSound");
-let unlocked = false;
-// unlock audio on first click anywhere
-document.addEventListener("click", () => {
-  unlocked = true;
-});
-
-btn.addEventListener("mouseenter", () => {
-  if (unlocked) {
+btn.addEventListener("click", () => {
     sound.currentTime = 0;
     sound.play();
-  }
 });
 </script>
 
