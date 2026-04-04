@@ -44,7 +44,7 @@ height: 100%;
 
 #btn{
     font-family: meow;
-    padding: 8px 15px;
+    padding: 8px 25px;
     font-size: 28px;
     font-weight: 600;
     border: 2px solid white;
@@ -56,7 +56,7 @@ height: 100%;
 
 #btn:hover{
     font-family: meow;
-    padding: 8px 15px;
+    padding: 8px 25px;
     font-size: 28px;
     font-weight: 600;
     border: 2px solid transparent;
