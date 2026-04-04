@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Me kya laadle Meow !</h1>
+        <button id="btn">Ghop Ghop</button>
+        <audio id="hoverSound" src="ghop.mp3" preload="auto"></audio>
+    </div>
+
+<script>
+const btn = document.getElementById("btn");
+const sound = document.getElementById("hoverSound");
+let unlocked = false;
+// unlock audio on first click anywhere
+document.addEventListener("click", () => {
+  unlocked = true;
+});
+
+btn.addEventListener("mouseenter", () => {
+  if (unlocked) {
+    sound.currentTime = 0;
+    sound.play();
+  }
+});
+</script>
+
+</body>
+</html>
