@@ -1,11 +1,11 @@
 @font-face {
     font-family: font;
-    src: url(./Voyage-Regular.woff)
+    src: url(./Fonts/Voyage-Regular.woff)
 }
 
 @font-face {
     font-family: button;
-    src: url(./OTJubilee-PlatinumRegular.woff);
+    src: url(./Fonts/OTJubilee-PlatinumRegular.woff);
 }
 
 * {
