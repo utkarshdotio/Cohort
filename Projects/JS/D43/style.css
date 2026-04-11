@@ -25,6 +25,7 @@ height: 100%;
 }
 
 h2{
+    font-family: button;
     color: white;
     margin-bottom: 10px;
 }
