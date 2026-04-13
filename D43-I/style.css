@@ -1,8 +1,12 @@
 @font-face {
+    font-family: team;
+    src: url(../Fonts/Voyage-Regular.woff);
+}
+
+@font-face {
     font-family: button;
     src: url(../Fonts/OTJubilee-PlatinumRegular.woff);
 }
-
 * {
 margin: 0;
 padding: 0;
@@ -13,47 +17,39 @@ width: 100%;
 height: 100%;
 }
 
-#main{
+main{
     height: 100%;
     width: 100%;
+    background-color: lightpink;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 180px;
-    background-color: black;
-
+    justify-content: center;  
+    gap: 20px;  
 }
 
-h2{
-    font-family: button;
+h1{
     color: white;
-    margin-bottom: 10px;
+    font-family: team;
+    font-size: 100px;
+    padding: 10px 50px; 
+    border-radius: 10px;
+    background-color: lightcoral;
 }
 
-
-#box{
-    height: 400px;
-    width: 400px;
-    border: 5px solid white;
-    border-radius: 50px;
-    background-color: rgb(244, 164, 96);
-    margin-bottom: 20px;
-
-}
-
-#btn{
+button{
     margin: 20px;
     font-family: button;
-    padding: 8px 30px;
+    padding: 11px 20px;
     font-size: 20px;
     font-weight: 600;
-    border: 2px solid white;
+    border: 4px solid rgb(0, 0, 0);
     border-radius: 50px;
     color: black;
     background-color: white;
     cursor: pointer;
 }
 
-#btn:active{
+button:active{
     scale: 0.95;
 }
