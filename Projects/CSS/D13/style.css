@@ -1,0 +1,117 @@
+@font-face {
+    font-family: logo;
+    src: url(./Herculanum.ttf);
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Helvetica';
+}
+html,body {
+width: 100%;
+height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 45px;
+}
+
+#nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+#lnav,#rnav{
+    display: flex;
+    gap: 30px;
+}
+
+#mid{
+    font-family: logo;
+    font-size: 30px;
+}
+
+#main>h1{
+    font-size: 300px;
+    font-weight: 300;
+    padding-left: 50px;
+}
+
+#btmleft{  
+    width: 250px;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+}
+
+#btmleft h3{
+    font-size: 20px;
+}
+
+#btmleft p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+#btmleft h4{
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+#btmnav{
+position: absolute;
+bottom: 0%;
+left: 0%;
+width: 100%;
+padding: 20px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#btmnav h1{
+    font-weight: 500;
+    font-style: italic;
+}
+
+#btmnav a{
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#main>img{
+    position: absolute;
+}
+
+#first{
+    height: 350px !important;
+    top: 35%;
+    left: 61%;
+    z-index: 3;
+}
+#third{
+    height: 240px !important;
+    width: 210px;
+    bottom: 10%;
+    left: 49%;
+}
+#second{
+    height: 250px !important;
+    width: 200px;
+    top:47%;
+    left: 39%;
+}
