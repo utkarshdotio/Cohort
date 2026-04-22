@@ -13,7 +13,7 @@ font-family: 'Helvetica';
     height: 100%;
     width: 100%;
     padding: 40px;
-    background-color: lightskyblue;
+    background-color: rgba(244, 198, 241, 0.659);
     display: flex;
     gap: 20px;
     flex-wrap: nowrap;
