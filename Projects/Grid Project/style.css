@@ -1,9 +1,249 @@
+@font-face {
+  font-family: Martica;
+  src: url(./Martica.otf);
+}
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: Martica;
 }
+
 html,body {
 width: 100%;
 height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-areas: "head head head"
+                        "sec1 sec2 sec2"
+                        "sec1 sec3 sec4";
+}
+
+.header{
+    background-color: transparent;
+
+}
+
+
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+nav .left h1{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px;   
+    letter-spacing: 2px;
+
+}
+
+nav .centre{
+    display: flex;
+    gap: 40px;
+}
+
+nav .centre a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    -webkit-text-stroke: .5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav .right{
+    display: flex;
+    gap: 20px
+}
+
+nav .right #b1{
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+nav .right #b1:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+nav .right #b2{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    background-color: #8fc2f1;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+nav .right #b2:hover {
+    background-color: #5ca2e3;
+;
+}
+
+
+.sec1{
+    background-color: transparent;
+    /* border: 2px solid rgb(184, 8, 223); */
+}
+
+.sec1 .top h1{
+    color: black;
+    font-size: 85px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.sec1 .top h1 span button{
+    vertical-align: middle;
+}
+
+.sec1 .top h1 span #bg{
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3lrMjJqaHI3czZ5N2RyczExamNvY2ZpeTAzNTF3MzRwcHlxcWMyeSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/2SYpZ92iLQsF6QZl5u/giphy.gif);
+    /* background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dHViZHZpMjlqaHM1eDFnMGZqMXphbDhrMTlrYmtmaTEzcDA0eDJqayZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/QXwvAzE2mIbR0fGxag/giphy.gif); */
+    background-position: center;
+    background-size: cover;
+    padding: 25px 60px;
+    border-radius: 40px;
+    border: none;
+}
+
+.sec1 .top h1 span #text{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 40px;
+    font-weight: 400;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+.sec1 .top #b1{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    background-color: #8fc2f1;
+    padding: 12px 18px;
+    transition: all ease .6s;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.sec1 .top #b1 i{
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.sec1 .top #b1:hover {
+  background-color: #5ca2e3;
+}
+
+.sec1 .top #b2{
+    font-size: 16px;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    background-color: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+
+.sec1 .bottom{
+    margin-top: 100px;
+}
+
+.sec1 .bottom h4{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 30px;
+
+}
+
+.sec1 .images {
+  display: flex;
+  gap: 40px;
+  padding: 0px 20px;
+}
+
+.sec1 .images img {
+  height: auto;
+  width: 150px;
+  object-fit: contain;
+}
+
+
+.sec2{
+    background-image: url(https://i.pinimg.com/1200x/63/d0/46/63d04686f34ce42241b85908ee84f8b2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.sec2 .top h2{
+    font-size: 45px;
+    color: white;
+}
+
+.sec2 .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec2 .bottom h4{
+    margin-top: 70px;
+    font-size: 18px;
+    color: white;
+    line-height: 1.1;
+}
+
+.sec2 .bottom button{
+    margin-top: 70px;
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.sec3{
+    background-image: url(https://i.pinimg.com/736x/07/86/7b/07867b60be5c99ac850ef3d4f5452586.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 40px;
+}
+.sec4{
+  background-image: url(https://i.pinimg.com/736x/a8/42/e9/a842e99cfb004a16f1ad6ac52c07de6c.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 40px;
 }
