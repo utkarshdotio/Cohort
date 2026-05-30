@@ -1,0 +1,27 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body {
+width: 100%;
+height: 100%;
+}
+
+main{
+    background-image: url(https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --x:400px;
+    --y:400px
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(140px at var(--x) var(--y), rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.897));
+}
